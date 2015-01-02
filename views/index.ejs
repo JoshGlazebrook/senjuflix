@@ -1,0 +1,18 @@
+<% include header %>
+<% include includes/navbar %>
+
+<div class="maincontainer-push">
+    <h4 class="text-center">Today's most popular movies:</h4>
+
+    <div class="popular-movies">
+        <% movies.forEach(function(movie) { %>
+        <div class="movie-poster">
+            <a href="/movie/<%= movie.id %>">
+                <img class="movie-poster" src="http://image.tmdb.org/t/p/w500/<%= movie.poster_path %>">
+            </a>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+<% include footer %>

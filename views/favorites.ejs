@@ -1,0 +1,22 @@
+<% include header %>
+<% include includes/navbar %>
+
+<div class="maincontainer-push">
+    <div class="container">
+        <h4 class="text-center">Movies you have favorited</h4>
+
+        <div class="popular-movies">
+            <% favorites.forEach(function(movie) { %>
+            <div class="movie-poster">
+                <a href="/movie/<%= movie.movie_id %>">
+                    <img class="movie-poster img-responsive"
+                         src="http://image.tmdb.org/t/p/w500/<%= movie.movie.poster_url %>">
+                </a>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+
+</div>
+
+<% include footer %>

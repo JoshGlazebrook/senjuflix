@@ -1,0 +1,24 @@
+<% include header %>
+<% include includes/navbar %>
+
+<div class="maincontainer-push">
+    <h4 class="text-center">
+        <% if (movies.length > 0) { %>
+        Search results for: '<%= searchterms %>'
+        <% } else { %>
+        No results were found for: '<%= searchterms %>'
+        <% } %>
+    </h4>
+
+    <div class="popular-movies">
+        <% movies.forEach(function(movie) { %>
+        <div class="movie-poster">
+            <a href="/movie/<%= movie.id %>">
+                <img class="movie-poster img-responsive" src="http://image.tmdb.org/t/p/w500/<%= movie.poster_path %>">
+            </a>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+<% include footer %>

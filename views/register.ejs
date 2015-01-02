@@ -1,0 +1,28 @@
+<% include header %>
+
+<div class="container">
+    <h2 class="form-signin-heading text-center">Register for Senjuflix</h2>
+
+    <form class="form-signin" role="form" method="post">
+        <% if (error) { %>
+        <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Error: </strong><%= error %>
+        </div>
+        <% } %>
+
+        <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <input name="first_name" class="form-control" placeholder="First Name" required>
+        <input name="last_name" class="form-control" placeholder="Last Name" required>
+        <input name="street" class="form-control" placeholder="Address" required>
+        <input name="city" class="form-control" placeholder="City" required>
+        <input name="state" class="form-control" placeholder="State" required>
+        <input name="zipcode" class="form-control" placeholder="Zip Code" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
+    </form>
+
+</div>
+
+<% include footer %>

@@ -1,0 +1,136 @@
+body {
+    background-color: #efefef;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+#searchbox {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.maincontainer {
+    margin-top: 50px;
+}
+
+.maincontainer-push {
+    margin-top: 70px;
+}
+
+.form-signin {
+    max-width: 400px;
+    margin: 60px auto;
+}
+
+.form-signin-heading {
+    margin-bottom: 20px;
+}
+
+.form-signin input[type="email"] {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin h6 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form-signin button {
+    margin-top: 10px;
+}
+
+.movie-poster {
+    margin: 5px;
+    float: left;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.movie-poster :hover {
+    opacity: 0.85;
+}
+
+.movie-poster-large {
+    max-height: 440px;
+}
+
+.mpaa-rating {
+    max-width: 80px;
+    text-align: center;
+    padding: 0 2px 0 2px;
+    font-weight: bold;
+    background: #bbbbbb;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radio: 4px;
+}
+
+.rt-rating-container {
+    margin-top: 10px;
+}
+
+.rt-rating-percent {
+    padding-left: 0px;
+    margin-top: 15px;
+}
+
+.movie-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ratings-details-container {
+    margin-top: 30px;
+}
+
+.ratings-container, .cast-container {
+    margin-top: 20px;
+}
+
+.rt-rating {
+    margin: 8px 0px 8px 0px;
+}
+
+.rt-rating > img {
+    max-width: 60px;
+}
+
+
+.rating-tomato {
+    max-width: 50px;
+}
+
+.details-container {
+    margin-bottom: 20px;
+}
+
+.details-container > h4 {
+    font-weight: normal;
+    font-size: 14px;
+    margin: 6px 0 6px 0;
+}
+
+.similar-movies-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.movie-poster-small {
+    width: 120px;
+    height: 190px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.movie-poster-small :hover {
+    opacity: 0.85;
+}

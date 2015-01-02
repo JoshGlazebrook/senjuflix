@@ -1,0 +1,20 @@
+<% include header %>
+<% include includes/navbar %>
+
+<div class="maincontainer-push">
+    <div class="container">
+        <h2>Account Details:</h2>
+
+        <h4>Email: </h4> <%= account.email %>
+        <h4>First Name: </h4> <%= account.first_name %>
+        <h4>Last Name: </h4> <%= account.last_name %>
+        <h4>Address: </h4> <%= account.street %>
+        <h4>City: </h4> <%= account.city %>
+        <h4>State: </h4> <%= account.state %>
+        <h4>Zipcode: </h4> <%= account.zipcode %>
+
+    </div>
+
+</div>
+
+<% include footer %>
