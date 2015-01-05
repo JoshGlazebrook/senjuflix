@@ -87,16 +87,13 @@ exports.getMovieInfo = function (movie_id) {
         })
             // Get info from Rotten Tomatoes
         .then(function (movie_info) {
-                console.log(movie_info);
             return request(rotten.formatUri('movie_alias.json?type=imdb&id=' + movie_info.imdb_id.replace('tt', '')))
             .spread(function (res, body) {
-                    console.log(res.statusCode);
                 if (res.statusCode !== 200) throw api.createError(500, "ApiError");
                 return JSON.parse(body);
             })
                 // Extract Rotten Tomatoes Info
             .then(function (result) {
-                    console.log(result);
                 movie_info = _.extend(movie_info, {
                     mpaa_rating: result.mpaa_rating,
                     critic_score: result.ratings.critics_score,
